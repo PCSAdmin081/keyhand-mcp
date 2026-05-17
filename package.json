@@ -1,0 +1,46 @@
+{
+  "name": "keyhand-mcp",
+  "version": "0.1.0",
+  "description": "Claude Code / Cursor stdio MCP bridge for KeyHand — credential dropbox for AI-powered agencies. Proxies stdio JSON-RPC to your KeyHand workspace's HTTPS MCP endpoint so agents can list and inject credentials without ever holding plaintext.",
+  "type": "module",
+  "main": "bin/keyhand-mcp.js",
+  "bin": {
+    "keyhand-mcp": "./bin/keyhand-mcp.js"
+  },
+  "files": ["bin/", "README.md", "LICENSE"],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "claude-code",
+    "cursor",
+    "anthropic",
+    "secrets",
+    "secrets-management",
+    "credentials",
+    "vault",
+    "api-keys",
+    "stripe",
+    "wordpress",
+    "ai-agents",
+    "ai-security",
+    "agent-blind",
+    "credential-broker",
+    "keyhand"
+  ],
+  "author": "KeyHand <hi@keyhand.com>",
+  "license": "MIT",
+  "homepage": "https://keyhand.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PCSAdmin081/keyhand-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PCSAdmin081/keyhand-mcp/issues",
+    "email": "hi@keyhand.com"
+  }
+}
