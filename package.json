@@ -5,7 +5,7 @@
   "type": "module",
   "main": "bin/keyhand-mcp.js",
   "bin": {
-    "keyhand-mcp": "./bin/keyhand-mcp.js"
+    "keyhand-mcp": "bin/keyhand-mcp.js"
   },
   "files": ["bin/", "README.md", "LICENSE"],
   "engines": {
