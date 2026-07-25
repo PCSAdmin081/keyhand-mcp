@@ -1,6 +1,8 @@
 # keyhand-mcp
 
-Stdio MCP bridge for [KeyHand](https://keyhand.com) — the credential dropbox for AI-powered agencies.
+> KeyHand is in development at [Pathway Connection Solutions](https://pthwyconnect.com). The hosted service will run at `keyhand.pthwyconnect.com`; early access via [pthwyconnect.com/keyhand](https://pthwyconnect.com/keyhand/).
+
+Stdio MCP bridge for [KeyHand](https://pthwyconnect.com/keyhand/) — the credential dropbox for AI-powered agencies.
 
 KeyHand stores your client API keys, admin passwords, and service-account JSONs in an encrypted vault, then lets your AI agent (Claude Code, Cursor, Claude Desktop) use them in HTTP calls **without ever seeing the plaintext**. This package is the stdio bridge for clients that don't yet speak the HTTPS MCP transport natively.
 
@@ -26,14 +28,14 @@ Edit your Claude Desktop config:
 }
 ```
 
-Generate the token at **https://keyhand.com/dashboard/settings/tokens**.
+Generate the token at **https://keyhand.pthwyconnect.com/dashboard/settings/tokens**.
 
 ## Use with Claude Code
 
 Claude Code can talk to KeyHand's HTTPS endpoint directly — you don't need this package. Run:
 
 ```bash
-claude mcp add keyhand https://keyhand.com/api/mcp \
+claude mcp add keyhand https://keyhand.pthwyconnect.com/api/mcp \
   --header "Authorization: Bearer mcp_xxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -76,7 +78,7 @@ That's the entire implementation. ~60 lines of Node. No dependencies beyond the 
 - This package never persists anything to disk.
 - KeyHand's MCP endpoint logs every request to your workspace's audit log.
 
-Full threat model: https://keyhand.com/security.
+Threat-model overview: https://pthwyconnect.com/keyhand/ (full document ships with the hosted release).
 
 ## License
 
@@ -84,7 +86,7 @@ MIT. See LICENSE.
 
 ## Links
 
-- Site: https://keyhand.com
-- Docs: https://keyhand.com/help
+- Site: https://pthwyconnect.com/keyhand/
+- Early access: https://pthwyconnect.com/keyhand/
 - Source: https://github.com/PCSAdmin081/keyhand-mcp (will go live with v0.1.0)
-- Security: security@keyhand.com
+- Security: jmc@pthwyconnect.com
